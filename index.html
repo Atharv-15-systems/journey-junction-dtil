@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Junction - Welcome</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        .welcome-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .welcome-container h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .welcome-container img {
+            width: 100%;
+            max-width: 250px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background: #6e8efb;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+        }
+        .btn-primary:hover {
+            background: #5a7ee0;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Journey Junction</h1>
+        <img src="https://assets.onecompiler.app/42yvfz3js/42yvfwrfq/homepage1.webp" alt="Hiker welcoming">
+        <p>"Welcome to Journey Junction – Your companion for safe and thrilling trekking adventures!"</p>
+        <a href="login.html" class="btn btn-primary">Let's Get Started</a>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCf1Y-zV7KAYf99-gd0d2tMd7khA4vYYZA",
+          authDomain: "jouurny-junction.firebaseapp.com",
+          projectId: "jouurny-junction",
+          storageBucket: "jouurny-junction.firebasestorage.app",
+          messagingSenderId: "530896446683",
+          appId: "1:530896446683:web:b1905a75001480cb4658fe",
+          measurementId: "G-QZJ75CBPZX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

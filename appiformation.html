@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Junction - App Workflow</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            font-family: Arial, sans-serif;
+            color: #fff;
+            min-height: 100vh;
+        }
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .header-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .workflow-step {
+            background: #fff;
+            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .workflow-step h3 {
+            color: #6e8efb;
+            margin-top: 15px;
+        }
+        .workflow-step p {
+            margin: 15px 0;
+        }
+        .workflow-step i {
+            font-size: 40px;
+            color: #6e8efb;
+            margin-bottom: 10px;
+        }
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            color: #6e8efb;
+        }
+        .back-btn:hover {
+            background-color: #f0f0f0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="dashboard.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <!-- Header -->
+    <div class="container">
+        <h1 class="header-title">Journey Junction - App Workflow</h1>
+        <p class="text-center">
+            Journey Junction is your ultimate companion for safe and enjoyable trekking and hiking adventures. Explore the app features below!
+        </p>
+
+        <!-- Workflow Steps -->
+        <div class="row">
+            <!-- Welcome Page -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-door-open"></i>
+                    <h3>1. Welcome Page</h3>
+                    <p>A friendly introduction to our platform. Users are greeted with information about Journey Junction.</p>
+                </div>
+            </div>
+
+            <!-- Login Page -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <h3>2. Login Page</h3>
+                    <p>Securely log in to access the app features or create a new account to join the Journey Junction family.</p>
+                </div>
+            </div>
+
+            <!-- Dashboard -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-th-large"></i>
+                    <h3>3. Dashboard</h3>
+                    <p>Access all features of the app, including navigation, shopping, emergency services, and live tracking.</p>
+                </div>
+            </div>
+
+            <!-- Requirement Page -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>4. Requirement Page</h3>
+                    <p>Purchase hiking and trekking essentials like tents, ropes, compasses, and more from our integrated store.</p>
+                </div>
+            </div>
+
+            <!-- Location Tracker -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>5. Location Tracker</h3>
+                    <p>Navigate with live maps, track coordinates of other users using their tracking ID, and get real-time directions.</p>
+                </div>
+            </div>
+
+            <!-- Get My Location -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-map"></i>
+                    <h3>6. Get My Location</h3>
+                    <p>Check your current location, view coordinates, and track your speed to understand your position better.</p>
+                </div>
+            </div>
+
+            <!-- Guide Availability -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-user-check"></i>
+                    <h3>7. Check Guide Availability</h3>
+                    <p>Ensure your safety by finding available guides for your destination before you start trekking.</p>
+                </div>
+            </div>
+
+            <!-- Emergency -->
+            <div class="col-md-6 col-lg-4">
+                <div class="workflow-step">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>8. Emergency</h3>
+                    <p>Quickly contact mountain rescue, share live coordinates, or find other emergency services during a crisis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Journey Junction. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

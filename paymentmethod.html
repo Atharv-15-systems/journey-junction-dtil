@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Payment Method</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            font-family: Arial, sans-serif;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .payment-methods {
+            background: #fff;
+            color: #333;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+        }
+        .payment-methods h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #6e8efb;
+        }
+        .btn-method {
+            margin: 10px 0;
+            width: 100%;
+        }
+        .btn-back {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: #6e8efb;
+            text-decoration: none;
+        }
+        .btn-back:hover {
+            color: #5a7ee0;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-methods">
+        <a href="javascript:history.back()" class="btn-back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+        </a>
+        <h1>Select Payment Method</h1>
+        <button class="btn btn-primary btn-method" onclick="processPayment('Credit/Debit Card')">Credit/Debit Card</button>
+        <button class="btn btn-success btn-method" onclick="processPayment('UPI')">UPI</button>
+        <button class="btn btn-warning btn-method" onclick="processPayment('Wallet')">Wallet</button>
+    </div>
+
+    <script>
+        // Get query parameters
+        const params = new URLSearchParams(window.location.search);
+        const product = params.get('product');
+        const price = params.get('price');
+        
+        document.getElementById('product').textContent = `Product: ${product}`;
+        document.getElementById('price').textContent = `Price: ₹${price}`;
+
+        // Process selected payment method
+        function processPayment(method) {
+            alert(`Processing payment for ${product} costing ₹${price} using ${method}.`);
+            // Add payment gateway integration here
+        }
+    </script>
+</body>
+</html>

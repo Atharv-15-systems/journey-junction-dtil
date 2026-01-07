@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            font-family: Arial, sans-serif;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .payment-card {
+            background-color: #fff;
+            color: #333;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+        .payment-card h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #6e8efb;
+        }
+        .payment-card p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .btn-pay {
+            background-color: #6e8efb;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        .btn-pay:hover {
+            background-color: #5a7ee0;
+        }
+        .btn-back {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: #6e8efb;
+            text-decoration: none;
+        }
+        .btn-back:hover {
+            color: #5a7ee0;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-card">
+        <a href="javascript:history.back()" class="btn-back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>
+        </a>
+        <h1>Payment Details</h1>
+        <p id="product"></p>
+        <p id="price"></p>
+        <a href="paymentmethod.html" class="btn-pay" onclick="makePayment()">Proceed to Payment</a>
+    </div>
+
+    <script>
+        // Function to get query parameters from URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                product: params.get('product'),
+                price: params.get('price')
+            };
+        }
+
+        // Display product name and price on the payment page
+        const { product, price } = getQueryParams();
+        document.getElementById('product').textContent = `Product: ${product}`;
+        document.getElementById('price').textContent = `Price: ₹${price}`;
+
+        // Simulate a payment function
+        function makePayment() {
+            alert(`Proceeding to payment for ${product} costing ₹${price}`);
+        }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

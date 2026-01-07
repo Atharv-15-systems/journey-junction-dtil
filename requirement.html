@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Junction - Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/lucide-icons@0.257.0/dist/lucide.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            color: #333;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h5 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #6e8efb;
+        }
+        .product-card p {
+            padding: 0 10px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .btn-buy {
+            background-color: #6e8efb;
+            color: #fff;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .btn-buy:hover {
+            background-color: #5a7ee0;
+        }
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <a href="dashboard.html" class="back-btn text-white">
+        <i data-lucide="arrow-left" width="24" height="24"></i>
+    </a>
+    <div class="container">
+        <h1 class="text-center text-white mb-4">Journey Junction Gear Shop</h1>
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/camping%20tent%20new.jpg" alt="Camping Tent">
+                    <h5>Camping Tent</h5>
+                    <h4>-₹999/-</h4>
+                    <p>Spacious 4-person tent with waterproof coating and easy setup.</p>
+                    <a href="payment.html?product=Camping Tent&price=999" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20220543.png" alt="Hiking Backpack">
+                    <h5>Hiking Backpack</h5>
+                    <h4>-₹1,499/-</h4>
+                    <p>Durable and lightweight 40L backpack with multiple compartments.</p>
+                    <a href="payment.html?product=Hiking Backpack&price=1,499" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20200417.png" alt="Sleeping Bag">
+                    <h5>Sleeping Bag</h5>
+                    <h4>-₹649/-</h4>
+                    <p>All-season insulated sleeping bag with waterproof shell.</p>
+                    <a href="payment.html?product=Sleeping Bag&price=649" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20220027.png" alt="Climbing Rope">
+                    <h5>Compass</h5>
+                    <h4>-₹599/-</h4>
+                    <p>A compact, durable compass offering precise navigation for hikers and adventurers.</p>
+                    <a href="payment.html?product=Compass&price=599" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20200016.png" alt="Climbing Rope">
+                    <h5>Climbing Rope</h5>
+                    <h4>-₹1,199/-</h4>
+                    <p>Sturdy rope designed for safe climbing and rappelling.</p>
+                    <a href="payment.html?product=Climbing Rope&price=1,199" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20195426.png" alt="Camping Chair">
+                    <h5>Camping Chair</h5>
+                    <h4>-₹649/-</h4>
+                    <p>Comfortable foldable chair, perfect for outdoor relaxation.</p>
+                    <a href="payment.html?product=Camping Chair&price=649" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Headlamp%20new.webp" alt="Headlamp">
+                    <h5>Headlamp</h5>
+                    <h4>-₹349/-</h4>
+                    <p>Bright LED headlamp with adjustable straps and rechargeable battery.</p>
+                    <a href="payment.html?product=Headlamp&price=349" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20194927.png" alt="Camping Lantern">
+                    <h5>Camping Lantern</h5>
+                    <h4>-₹499/-</h4>
+                    <p>Rechargeable LED lantern with long battery life.</p>
+                    <a href="payment.html?product=Camping Lanter&price=499" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20194554.png" alt="Multi-tool Knife">
+                    <h5>Multi-tool Knife</h5>
+                    <h4>-₹299/-</h4>
+                    <p>Compact knife with multiple tools for any outdoor activity.</p>
+                    <a href="payment.html?product=Multi-tool Knife&price=299" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://assets.onecompiler.app/42yvfz3js/42yvncgax/Screenshot%202024-11-22%20193533.png" alt="Trekking Boots">
+                    <h5>Trekking Boots</h5>
+                    <h4>-₹1,199/-</h4>
+                    <p>Waterproof boots with excellent grip and ankle support.</p>
+                    <a href="payment.html?product=Trekking Boots&price=1,199" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lucide Icons JS -->
+    <script src="https://unpkg.com/lucide@0.257.0/dist/umd/lucide.min.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
